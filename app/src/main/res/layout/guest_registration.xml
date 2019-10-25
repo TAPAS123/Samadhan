@@ -1,0 +1,303 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+           <ScrollView
+               android:id="@+id/scrollView1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+			  >
+
+
+			   <RelativeLayout
+				   android:layout_width="match_parent"
+				   android:layout_height="wrap_content">
+
+			   <RelativeLayout
+				   android:id="@+id/toprelative"
+
+				   android:layout_width="match_parent"
+				   android:layout_height="wrap_content"
+				   android:gravity="center">
+
+				   <ImageView
+					   android:layout_width="210dp"
+					   android:layout_height="190dp"
+					   android:layout_marginBottom="8dp"
+					   android:layout_marginTop="10dp"
+					   android:src="@drawable/logo"/>
+			   </RelativeLayout>
+
+
+			   <LinearLayout
+				   android:layout_below="@+id/toprelative"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+				   android:layout_marginLeft="20dp"
+				   android:layout_marginTop="40dp"
+				   android:layout_marginRight="20dp">
+                   
+                    <!--<RelativeLayout-->
+		            <!--android:layout_width="match_parent"-->
+		            <!--android:id="@+id/rr1"-->
+		            <!--android:layout_height="40dp">-->
+
+		<!---->
+		            <!--<TextView-->
+		                <!--android:id="@+id/textView1"-->
+		                <!--android:layout_width="wrap_content"-->
+		                <!--android:layout_height="wrap_content"-->
+		                <!--android:layout_alignParentBottom="true"-->
+		                <!--android:layout_alignParentRight="true"-->
+		                <!--android:layout_marginRight="5dp"-->
+		                <!--android:textSize="21dp"-->
+						<!--android:textStyle="bold"-->
+		                <!--android:text="Guest Registration"-->
+		                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+		                <!--android:textColor="#ffffff" />-->
+
+		             <!--</RelativeLayout>-->
+
+				   <LinearLayout
+					   android:id="@+id/llaygrpcode"
+					   android:layout_width="wrap_content"
+					   android:layout_height="wrap_content"
+					   android:orientation="vertical">
+
+
+				   <LinearLayout
+
+					   android:layout_width="match_parent"
+					   android:layout_height="39dp"
+					   android:orientation="horizontal">
+
+					   <ImageView
+						   android:layout_width="40dp"
+						   android:layout_height="39dp"
+						   android:padding="8dp"
+						   android:src="@drawable/group_code_login"/>
+
+					   <EditText
+						   android:id="@+id/etClubId"
+						   android:layout_width="match_parent"
+						   android:layout_height="39dp"
+						   android:hint="Group Code"
+						   android:textColor="#ffffff"
+						   android:textColorHint="#ffffff"
+						   android:background="@null"
+						   android:textSize="16dp"
+						   android:singleLine="true"/>
+
+				   </LinearLayout>
+
+				   <View
+					   android:layout_width="match_parent"
+					   android:layout_height="1dp"
+					   android:background="#ffffff"></View>
+
+				   </LinearLayout>
+
+
+
+			   <LinearLayout
+				   android:layout_width="match_parent"
+				   android:layout_height="40dp"
+				   android:layout_marginTop="10dp"
+				   android:orientation="vertical">
+
+				   <LinearLayout
+					   android:layout_width="match_parent"
+					   android:layout_height="39dp"
+					   android:orientation="horizontal">
+
+					   <ImageView
+						   android:layout_width="40dp"
+						   android:layout_height="38dp"
+						   android:src="@drawable/user_login"
+						   android:padding="8dp"/>
+
+					   <EditText
+						   android:id="@+id/etGuestName"
+						   android:layout_width="match_parent"
+						   android:layout_height="39dp"
+						   android:hint="Guest Name"
+						   android:textColor="#ffffff"
+						   android:textColorHint="#ffffff"
+						   android:background="@null"
+						   android:textSize="16dp"
+						   android:singleLine="true"/>
+
+				   </LinearLayout>
+
+				   <View
+					   android:layout_width="match_parent"
+					   android:layout_height="1dp"
+					   android:background="#ffffff"></View>
+
+			   </LinearLayout>
+			   <LinearLayout
+				   android:layout_width="match_parent"
+				   android:layout_height="40dp"
+				   android:layout_marginTop="10dp"
+				   android:orientation="vertical">
+
+				   <LinearLayout
+					   android:layout_width="match_parent"
+					   android:layout_height="39dp"
+					   android:orientation="horizontal">
+
+					   <ImageView
+						   android:layout_width="40dp"
+						   android:layout_height="38dp"
+						   android:src="@drawable/mobile_login"
+						   android:padding="8dp"/>
+
+					   <EditText
+						   android:id="@+id/etMob"
+						   android:layout_width="match_parent"
+						   android:layout_height="39dp"
+						   android:hint="Mobile Number"
+						   android:inputType="number"
+						   android:background="@null"
+						   android:maxLength="10"
+						   android:textColor="#ffffff"
+						   android:textColorHint="#ffffff"
+						   android:textSize="16dp"
+						   android:singleLine="true"/>
+
+				   </LinearLayout>
+
+				   <View
+					   android:layout_width="match_parent"
+					   android:layout_height="1dp"
+					   android:background="#ffffff">
+
+				   </View>
+
+			   </LinearLayout>
+
+			   <LinearLayout
+				   android:layout_width="match_parent"
+				   android:layout_height="40dp"
+				   android:layout_marginTop="10dp"
+				   android:orientation="vertical">
+
+				   <LinearLayout
+					   android:layout_width="match_parent"
+					   android:layout_height="39dp"
+					   android:orientation="horizontal">
+
+					   <ImageView
+						   android:layout_width="40dp"
+						   android:layout_height="38dp"
+						   android:src="@drawable/email_login"
+						   android:padding="8dp"/>
+
+					   <EditText
+						   android:id="@+id/etEmail"
+						   android:layout_width="match_parent"
+						   android:layout_height="39dp"
+						   android:hint="Email"
+						   android:background="@null"
+						   android:textColor="#ffffff"
+						   android:textColorHint="#ffffff"
+						   android:textSize="16dp"
+						   android:singleLine="true" />
+
+				   </LinearLayout>
+
+				   <View
+					   android:layout_width="match_parent"
+					   android:layout_height="1dp"
+					   android:background="#ffffff">
+
+				   </View>
+
+
+
+			   </LinearLayout>
+
+				   <Button
+					   android:id="@+id/iV_Submit"
+					   android:layout_width="match_parent"
+					   android:layout_height="45dp"
+					   android:layout_gravity="center_horizontal"
+					   android:layout_marginTop="10dp"
+					   android:layout_alignParentBottom="true"
+					   android:background="@drawable/border_white"
+					   android:textColor="#ffffff"
+					   android:text="Submit"
+					   android:textSize="14sp" />
+
+
+				   <!--<EditText-->
+		                  <!--android:id="@+id/etClubId"-->
+		                  <!--android:layout_width="match_parent"-->
+		                  <!--android:layout_height="wrap_content"-->
+		                  <!--android:layout_marginBottom="5dp"-->
+		                  <!--android:layout_marginLeft="5dp"-->
+		                  <!--android:layout_marginRight="5dp"-->
+		                  <!--android:layout_marginTop="10dp"-->
+		                  <!--android:background="@drawable/edittextstyle"-->
+		                  <!--android:hint="Group Code"-->
+		                  <!--android:inputType="text"-->
+		                  <!--android:padding="6dp"-->
+		                  <!--android:textColor="#000000" >-->
+
+		              <!--</EditText>-->
+		              
+		              
+		              <!--<EditText-->
+		                <!--android:id="@+id/etGuestName"-->
+		                <!--android:layout_marginLeft="5dp"-->
+		                <!--android:layout_marginRight="5dp"-->
+		                <!--android:layout_marginBottom="5dp"-->
+		                <!--android:layout_marginTop="10dp"-->
+		                <!--android:padding="6dp"-->
+		                <!--android:inputType="text"-->
+		                <!--android:hint="Guest Name"-->
+		                <!--android:textColor="#000000"-->
+		                <!--android:background="@drawable/edittextstyle"-->
+		                <!--android:layout_width="match_parent"-->
+		                <!--android:layout_height="wrap_content">-->
+		              <!--</EditText>-->
+		              
+		
+		              <!--<EditText-->
+		               <!--android:id="@+id/etMob"-->
+		               <!--android:layout_margin="5dp"-->
+		               <!--android:maxLength="10"-->
+		               <!--android:hint="Mobile"-->
+		               <!--android:background="@drawable/edittextstyle"-->
+		               <!--android:padding="6dp"-->
+		               <!--android:inputType="number"-->
+		               <!--android:layout_width="match_parent"-->
+		               <!--android:layout_height="wrap_content"/>-->
+		
+		              <!--<EditText-->
+		                  <!--android:id="@+id/etEmail"-->
+		                  <!--android:layout_width="match_parent"-->
+		                  <!--android:layout_height="wrap_content"-->
+		                  <!--android:layout_margin="5dp"-->
+		                  <!--android:background="@drawable/edittextstyle"-->
+		                  <!--android:hint="Email"-->
+		                  <!--android:inputType="textEmailAddress"-->
+		                  <!--android:padding="6dp" />-->
+
+                   
+               </LinearLayout>
+			   </RelativeLayout>
+           </ScrollView>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+
+
+	</RelativeLayout>
+
+</RelativeLayout>

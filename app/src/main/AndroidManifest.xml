@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="groupmanager.samadhan">
+
+    <permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <permission android:name="android.permission.READ_PHONE_STATE" />
+    <permission android:name="android.permission.CALL_PHONE" />
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- GCM requires a Google account. -->
+    <permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Permission to vibrate -->
+    <permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="groupmanager.samadhan.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="groupmanager.samadhan.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".Controller"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Main_Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".Login"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".Guest_Registration"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ClubSync"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewsMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventCalendar"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventDetailValue"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewsMain2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpinionPoll_QuestionAnswer"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name=".Registration"></activity>
+        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".SplashScreen1"></activity>
+        <activity android:name=".SearchDisplay"></activity>
+        <activity android:name=".SwipeScreen"></activity>
+        <activity android:name=".Directory_SingleRecord"></activity>
+        <activity android:name=".ShowPastPresSec"></activity>
+        <activity android:name=".MessageDesk"></activity>
+        <activity android:name=".FamilyDetailvalue"></activity>
+        <activity android:name=".Global_Search"></activity>
+        <activity android:name=".Educational_Content2"></activity>
+        <activity android:name=".Directory_New"></activity>
+        <activity android:name=".Directory_Supplier_List"></activity>
+        <activity android:name=".Activity_Education_Content"></activity>
+        <activity android:name=".sync_test"></activity><!-- For testing  Only -->
+        <activity android:name=".YouTube_Video"></activity><!--Added On 17-04-2019-->
+
+
+        <!-- GCM BROADCAST RECEIVER For PUSH NOTIFICATION -->
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="groupmanager.samadhan" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Service For PUSH NOTIFICATION -->
+        <service android:name=".GCMIntentService" />
+
+        <!-- Service For Group Manager Pogrammes -->
+        <!-- <service android:name="group.manager.Service_Call_Old"></service> -->
+        <service android:name=".Service_Call_New" />
+
+
+    </application>
+
+</manifest>

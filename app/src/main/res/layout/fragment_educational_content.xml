@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_industrial"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/i"
+                android:text="Industrial\n Documentary"
+                android:textSize="17dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_professional"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Professional\n Episodes"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/p"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_technical"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Skill\n Development"
+                android:textSize="17dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/t"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_personal"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Personality\n Development"
+                android:background="@drawable/p1"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_startups"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Startups"
+                android:textSize="17dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/s"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_GovernmentScheme"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Government &amp;\n Bank Schemes"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/g"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_producer_comp"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Projects"
+                android:textSize="17dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/p1"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_SmallBusi"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Small Business"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/s"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

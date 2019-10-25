@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+
+
+    <LinearLayout
+        android:layout_marginBottom="70dp"
+        android:id="@+id/llayoutcenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnQuery"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@drawable/photo_helpdesk"
+            android:id="@+id/imageView3">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:orientation="vertical"
+            android:background="@drawable/contact_no">
+
+            <TextView
+                android:layout_above="@+id/llayoutcenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Dial Helpline Number"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/tvcallno1"
+                android:layout_above="@+id/llayoutcenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="7607655555"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tvcallno2"
+                android:layout_above="@+id/llayoutcenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:textSize="20dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ImageView
+        android:id="@+id/imgvwbottom"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icsi_logo_helpdesk"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ImageView>-->
+
+    <Button
+        android:id="@+id/btnQuery"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:textSize="16dp"
+        android:text="Raise your query" />
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?> <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000000">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_above="@+id/videoView"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:text="View Video"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/close_red_icon"
+            android:padding="3dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+
+    </RelativeLayout>
+
+    <VideoView android:id="@+id/videoView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="fill_parent"
+        android:layout_height="330dp">
+    </VideoView>
+
+
+</LinearLayout>

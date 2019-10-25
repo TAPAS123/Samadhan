@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group
+        android:id="@+id/drawer_group1"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="HOME" />
+
+   <item
+       android:id="@+id/nav_About"
+       android:icon="@drawable/about"
+       android:title="ABOUT US" />
+
+
+      </group>
+
+
+        <item android:title="INCUBATION" >
+            <menu>
+                <group android:checkableBehavior="single" android:id="@+id/drawer_group2" android:singleLine="false">
+
+
+        <item
+            android:id="@+id/nav_industrial"
+            android:icon="@drawable/industrial_icon"
+            android:title="INDUSTRIAL DOCUMENTARY"/>
+
+        <item
+            android:id="@+id/nav_professional"
+            android:icon="@drawable/professional_icon"
+            android:title="PROFESSIONAL EPISODES" />
+
+        <item
+            android:id="@+id/nav_technical"
+            android:icon="@drawable/technical_icon"
+            android:title="SKILL DEVELOPMENT" />
+
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/personal_hobby_icon"
+            android:title="PERSONALITY DEVELOPMENT"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_startups"
+            android:icon="@drawable/startup"
+            android:title="EDP" />
+
+        <item
+            android:id="@+id/nav_small_busi"
+            android:icon="@drawable/smallbussiness"
+            android:title="GOVERNMENT &amp; BANK SCHEMES" />
+
+
+                    <item
+                        android:id="@+id/nav_dir_producer_comp"
+                        android:icon="@drawable/producer_company"
+                        android:title="PROJECTS" />
+
+                    <item
+                        android:id="@+id/nav_SmallBusiMain"
+                        android:icon="@drawable/startup"
+                        android:title="SMALL BUSINESS" />
+
+                </group>
+            </menu>
+        </item>
+
+
+        <group android:checkableBehavior="single"
+            android:id="@+id/drawer_group3">
+
+
+           <item
+               android:id="@+id/nav_news"
+               android:icon="@drawable/news"
+               android:title="NEWS" />
+
+           <item
+               android:id="@+id/nav_events"
+               android:icon="@drawable/event"
+               android:title="EVENTS" />
+
+            <item
+                android:id="@+id/nav_Gallery"
+                android:icon="@drawable/photo_gallery"
+                android:title="GALLERY" />
+
+            <item
+                android:id="@+id/nav_opinionpoll"
+                android:icon="@drawable/opinion_poll"
+                android:title="OPINION POLL/QUIZ" />
+
+
+
+            <item android:title="DIRECTORY" android:icon="@drawable/directory_icon" android:id="@+id/nav_dirMain">
+                <menu>
+                    <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/nav_dir_executive"
+                            android:icon="@drawable/dot"
+                            android:title="EXECUTIVE MEMBERS" />
+                        <item
+                            android:id="@+id/nav_dir_professional"
+                            android:icon="@drawable/dot"
+                            android:title="PROFESSIONAL MEMBERS" />
+                        <item
+                            android:id="@+id/nav_dir_corporate"
+                            android:icon="@drawable/dot"
+                            android:title="CORPORATE MEMBERS" />
+                        <item
+                            android:id="@+id/nav_dir_experts"
+                            android:icon="@drawable/dot"
+                            android:title="EXPERTS" />
+                        <item
+                            android:id="@+id/nav_dir_suppliers"
+                            android:icon="@drawable/dot"
+                            android:title="SUPPLIERS" />
+
+
+                    </group>
+                </menu>
+            </item>
+
+        </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/drawer_group4">
+
+        <item
+            android:id="@+id/nav_live_stream"
+            android:icon="@drawable/live_stream"
+            android:title="LIVE STREAMING" />
+
+
+        <item
+            android:id="@+id/nav_ad_vac"
+            android:icon="@drawable/job"
+            android:title="ADVERTISEMENT FOR VACANCY" />
+
+
+        <item
+            android:id="@+id/nav_suggestion"
+            android:icon="@drawable/whats_new"
+            android:title="SUGGESTIONS" />
+
+            <item
+                android:id="@+id/nav_globalsearch"
+                android:icon="@drawable/searchnew"
+                android:title="FIND MEMBER" />
+
+        <item
+            android:id="@+id/nav_Helpline"
+            android:icon="@drawable/help_line"
+            android:title="HELPLINE" />
+
+             <item
+                 android:id="@+id/nav_ContactUs"
+                 android:icon="@drawable/contact"
+                 android:title="CONTACT US" />
+         </group>
+
+</menu>

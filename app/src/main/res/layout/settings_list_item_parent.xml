@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:background="@drawable/fourth_coming_event_list"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_height="50dp">
+
+    <!--  android:background="#66cdaa7d" -->
+
+     <TextView
+		 android:id="@+id/list_item_text_view"
+         android:paddingLeft="5dp"
+         android:textSize="16dp"
+         android:textColor="#000000"
+         android:layout_toRightOf="@+id/imageView1st"
+         android:layout_toLeftOf="@+id/list_item_text_groupval"
+		android:textStyle="bold"
+         android:layout_centerVertical="true"
+         android:text="sdsdsd"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+         <CheckedTextView
+	        android:id="@+id/list_item_text_groupval"
+	        android:layout_alignParentRight="true"
+	        android:textColor="#000000"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+	        android:checked="false"
+	        android:layout_centerVertical="true"/>
+
+      <!--   <TextView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="17dp"
+        android:textColor="#062A78"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:id="@+id/row_N"
+        android:layout_height="wrap_content"
+        android:text="17890"/> -->
+
+        <ImageView
+            android:id="@+id/imageView1st"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/arrow_squaredown" />
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

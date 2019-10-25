@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ENTREPRENEUR INDIA LIVE</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="runtime_permissions_txt">Please enable ALL permissions from app settings.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_spr_countries">Countries</string>
+    <string name="str_spr_states">States</string>
+    <string name="str_spr_cities">Cities</string>
+    <string name="str_spr_bloodgrp">Blood Group</string>
+
+    <style name="MyTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColorPrimary">#1974D2</item>
+    </style>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <string name="guest_text"><u>Proceed as Guest</u></string>
+
+</resources>

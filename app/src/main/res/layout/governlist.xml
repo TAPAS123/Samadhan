@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/border_darkgrey"
+    android:layout_margin="3dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewGovern"
+        android:layout_width="95dp"
+        android:layout_height="105dp"
+        android:layout_margin="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/person1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvGovnName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="7dp"
+            android:text="Name"
+            android:textColor="#4a4a4a"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvGovrnMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:text="Mob"
+            android:textStyle="bold|italic"
+            android:textColor="#4a4a4a"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/imgmob"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/phone"/>
+
+        <TextView
+            android:id="@+id/tvDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Desig"
+            android:textColor="#4a4a4a"
+            android:textSize="16dp" />
+
+            </LinearLayout>
+
+          <!--<View-->
+              <!--android:layout_width="match_parent"-->
+              <!--android:layout_height="1dip"-->
+              <!--android:layout_marginLeft="3dp"-->
+              <!--android:layout_marginRight="3dp"-->
+              <!--android:layout_marginTop="5dp"-->
+              <!--android:background="#2E9AFE" />-->
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/imgloc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/email"/>
+
+          <TextView
+              android:id="@+id/tvGovrnEmail"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="7dp"
+              android:layout_marginLeft="3dp"
+              android:text="email"
+              android:textColor="#4a4a4a"
+              android:textSize="16dp" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

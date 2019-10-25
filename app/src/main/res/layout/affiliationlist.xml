@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="3dp"
+
+        android:paddingLeft="15dp"
+        android:background="@drawable/boxred"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:padding="13dp"-->
+            <!--android:src="@drawable/bluecircle"/>-->
+        
+         <TextView
+            android:id="@+id/txtcityaffiliation"
+            android:layout_width="125dp"
+            android:textStyle="bold"
+             android:textColor="#fe6b47"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="Medium Text"
+            android:textSize="16dp" />
+
+            <TextView
+            android:id="@+id/txtClubAffiliation"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtcityaffiliation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+                android:textColor="#000000"
+            android:textSize="16dp" />
+        
+    </LinearLayout>
+    
+       
+
+</RelativeLayout>

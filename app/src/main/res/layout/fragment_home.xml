@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_news"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/latest_news"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_event"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/event1"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_latestupdate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/latest_update"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

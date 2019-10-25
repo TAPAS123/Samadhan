@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDF3F2">
+
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                app:srcCompat="@drawable/suggestion"
+                android:id="@+id/imageView"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_above="@+id/RRBOTTOM"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout2" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout1">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textColor="#764C4C"
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/edtsugtitle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/photobackground">
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_margin="10dp"
+                    android:textColor="#764C4C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/edtsugdesc"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textMultiLine"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/photobackground"
+                    android:layout_height="160dp" />
+
+                <!-- <TextView
+                      android:id="@+id/textView3"
+                       android:layout_margin="10dp"
+                      android:textColor="#FF033E"
+                      android:textStyle="bold"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Email id"
+                      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/edEmailSug"
+                       android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:inputType="textEmailAddress"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" />  -->
+
+            </LinearLayout>
+        </ScrollView>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/RRBOTTOM"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/relativeLayout2">
+
+        <Button
+            android:id="@+id/btnsug_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:text="Submit" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageViewList"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:src="@drawable/listpend" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

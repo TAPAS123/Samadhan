@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_executive"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/e"
+                android:text="Executive\n Members"
+                android:textSize="17dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_professional"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Professional\n Members"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/p"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_corporate"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Corporate\n Members"
+                android:textSize="17dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/c"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_experts"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Experts"
+                android:background="@drawable/e1"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_suppliers"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:text="Suppliers"
+                android:textSize="17dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/s"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
